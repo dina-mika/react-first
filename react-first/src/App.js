@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import TodoList from './ToDo/TodoList';
 import Context from './context';
 import Loader from './Loader';
-import Modal from './Modal/Modal';
+import NewCard from './NewCard/NewCard';
 
 const AddTodo = React.lazy(() => import('./ToDo/AddTodo'))
 
@@ -49,7 +49,7 @@ function addTodo(title){
     <Context.Provider value={{removeTodo}}>
   <div className='wrapper'>
     <h1>React First Try</h1>
-    <Modal />
+    <NewCard />
     <React.Suspense fallback={<p>Loading...</p>}>
       <AddTodo onCreate={addTodo}/>
     </React.Suspense>

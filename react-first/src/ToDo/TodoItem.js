@@ -18,7 +18,7 @@ const styles={
 }
 
  function TodoItem({todo, index, onChange}){
-     const {removeTodo} = useContext(Context);
+    const {removeTodo} = useContext(Context);
     const classes=[]
 
     if(todo.completed){
@@ -38,8 +38,7 @@ const styles={
                 &nbsp;
                 {todo.title}
             </span>
-
-            <button className ='rm' onClick={removeTodo.bind(null, todo.id)}>&times;</button>
+            <input className ='rm' type='submit' id="del_but" value=" " onClick={removeTodo.bind(null, todo.id)} />
         </li>
     )
 }

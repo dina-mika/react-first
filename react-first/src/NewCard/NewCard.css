@@ -1,0 +1,21 @@
+.new-card{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: black;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+
+}
+
+.new-card-body{
+    padding: 2rem;
+    width: 400px;
+    border-radius: 5px;
+    background:white;
+    height: 200px;
+}
